@@ -2,7 +2,7 @@
 
 # Variables
 resourceGroup="cloud-demo"
-location="westus"
+location="westeurope"
 osType="UbuntuLTS"
 vmssName="udacity-vmss"
 adminName="udacityadmin"
