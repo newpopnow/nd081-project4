@@ -80,9 +80,9 @@ else:
     title = app.config['TITLE']
 
 # Redis Connection to a local server running on the same machine where the current FLask app is running. 
-r = redis.Redis()
+# r = redis.Redis()
 
-"""redis_server = os.environ['REDIS']
+redis_server = os.environ['REDIS']
 
 # Redis Connection to another container
 try:
@@ -95,7 +95,7 @@ try:
     r.ping()
 except redis.ConnectionError:
     exit('Failed to connect to Redis, terminating.')
-"""
+
 # Change title to host name to demo NLB
 if app.config['SHOWHOST'] == "true":
     title = socket.gethostname()
